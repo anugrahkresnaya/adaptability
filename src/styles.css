@@ -79,6 +79,7 @@ header {
 .title {
     font-family: 'Caveat', cursive;
     text-align: center;
+    margin: 50px 0 25px;
 }
 
 ul {
@@ -95,6 +96,16 @@ ul {
     text-align: justify;
 }
 
+.main-content p {
+    padding-bottom: 10px;
+}
+
+.main-content ol li {
+    padding-bottom: 10px;
+}
+
+
+/* responsive for tablet */
 @media (max-width: 1000px) {
     .container {
         margin: 0 100px;
