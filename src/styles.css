@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    /* box-sizing: border-box; */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    transition: 0.5s;
+}
+
+body.active {
+    background: rgb(37, 37, 37);
+    color: whitesmoke;
+}
+
+/* navbar */
+header {
+    background-color: aqua;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    font-family: 'Caveat', cursive;
+    margin: 5px;
+}
+
+#toggle {
+    position: relative;
+    margin: 5px;
+    width: 40px;
+    height: 20px;
+    border-radius: 10px;
+    background: #222;
+    transition: 0.5s;
+    cursor: pointer;
+    box-shadow: inset 0 8px 60px rgba(0,0,0,0.1),
+                inset 0 8px 8px rgba(0,0,0,0.1),
+                inset 0 -4px 4px rgba(0,0,0,0.1);
+}
+
+#toggle .indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(to bottom, #444, #222);
+    border-radius: 50%;
+    transform: scale(0.9);
+    box-shadow: 0 8px 40px rgba(0,0,0,0.5),
+                inset 0 4px 4px rgba(255, 255, 255, 0.2),
+                inset 0 -4px 4px rgba(255, 255, 255, 0.2);
+    transition: 0.5s;
+}
+
+#toggle.active .indicator {
+    left: 20px;
+}
+
+/* main content */
+.title {
+    font-family: 'Caveat', cursive;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0 400px
+}
+
+.main-content {
+    text-align: justify;
+}
+
+@media (max-width: 1000px) {
+    .container {
+        margin: 0 100px;
+    }
+}
